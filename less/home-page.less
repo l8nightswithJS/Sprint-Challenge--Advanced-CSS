@@ -4,6 +4,11 @@
 
   .intro {
 
+    img {
+      .margin-fullwidth;
+      border-radius: 5px;
+      height: 100%;
+    }
     h2 {
       padding: 15px;
     }
@@ -58,8 +63,23 @@
       }
 
       .btn {
-      }
+        border-radius: @size;
+        button{
+          font-size: 1.6rem;
+          padding: 2%;
+          .round-borders;
+          color: @border-real;
+          border: @main-border-color;
+          background: @btn-bg-color;
+          width: 30%;
+          height: 100%;
+          &:hover {
+            color: @main-font-color;
+            background: @porcelain
+          }
+        }
     }
+  }
 
     .walk-img {
       width: 46%;
