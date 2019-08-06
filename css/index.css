@@ -174,13 +174,26 @@ p {
   width: 100%;
 }
 .nav-container {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-flow: column nowrap;
   background: #F6F6F6;
   padding-bottom: 1%;
   color: #454A59;
+}
+@media (max-width: 600px) {
+  .nav-container {
+    width: 100%;
+  }
+}
+.nav-content {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (max-width: 600px) {
+  .nav-content {
+    width: 100%;
+  }
 }
 .nav-name {
   font-size: 35px;
@@ -189,10 +202,17 @@ p {
   padding: 2% 0% 2% 0%;
 }
 .nav-links {
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-evenly;
   align-self: center;
+}
+@media (max-width: 600px) {
+  .nav-links {
+    width: 100%;
+    padding: 0% 3% 0% 3%;
+  }
 }
 .nav-links a {
   text-decoration: none;
@@ -210,6 +230,11 @@ footer {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 600px) {
+  footer {
+    width: 100%;
+  }
+}
 .home .intro img {
   margin: 0 auto;
   width: 100%;
@@ -219,8 +244,24 @@ footer {
 .home .intro h2 {
   padding: 15px;
 }
+@media (max-width: 600px) {
+  .home .intro h2 {
+    padding: 2%;
+  }
+}
 .home .intro p {
   padding: 0 15px;
+}
+@media (max-width: 600px) {
+  .home .intro p {
+    padding: 2%;
+  }
+}
+@media (max-width: 600px) {
+  .home .intro {
+    width: 100%;
+    padding: 2%;
+  }
 }
 .home .space-images {
   display: flex;
@@ -232,6 +273,21 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 600px) {
+  .home .space-images {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .home .space-images .blast {
+    width: 100%;
+    padding: 0% 2% 0% 2%;
+  }
+  .home .space-images .launch,
+  .home .space-images .sky {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -248,6 +304,14 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 600px) {
+  .home .walk {
+    width: 100%;
+    flex-flow: column-reverse nowrap;
+    margin: 0 auto;
+    padding: 2%;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
@@ -277,9 +341,26 @@ footer {
   color: #5E6164;
   background: #F6F7F8;
 }
+@media (max-width: 600px) {
+  .home .walk .walk-text .btn button {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 600px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
